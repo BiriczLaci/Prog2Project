@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextField fx:id="name" alignment="CENTER" layoutX="129.0" layoutY="138.0" prefHeight="34.0" prefWidth="175.0" promptText="Születési név">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Label layoutX="23.0" layoutY="138.0" prefHeight="34.0" prefWidth="80.0" text="Név" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="203.0" prefHeight="34.0" prefWidth="105.0" text="Születési év" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="266.0" prefHeight="34.0" prefWidth="80.0" text="Nem" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="calendar" layoutX="129.0" layoutY="207.0" />
+      <Label alignment="CENTER" layoutX="227.0" layoutY="14.0" prefHeight="34.0" prefWidth="264.0" text="ABC">
+         <font>
+            <Font name="Centaur" size="36.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Button fx:id="add" defaultButton="true" layoutX="14.0" layoutY="423.0" mnemonicParsing="false" onAction="#addButton" prefHeight="26.0" prefWidth="80.0" text="Add" />
+      <Button fx:id="cancel" layoutX="103.0" layoutY="423.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" text="Cancel" />
+      <TableView fx:id="table" layoutX="329.0" layoutY="120.0" prefHeight="360.0" prefWidth="358.0" AnchorPane.leftAnchor="329.0">
+        <columns>
+          <TableColumn fx:id="tablename" prefWidth="106.39996337890625" text="Név" />
+          <TableColumn fx:id="tablecalendar" prefWidth="103.99996948242188" text="Szül.év" />
+            <TableColumn fx:id="tablegender" prefWidth="71.199951171875" text="Nem" />
+            <TableColumn fx:id="tablefreedom" prefWidth="76.800048828125" text="Szabadság" />
+        </columns>
+      </TableView>
+      <Label layoutX="23.0" layoutY="328.0" prefHeight="34.0" prefWidth="94.0" text="Szabadság" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="freedom" alignment="CENTER" layoutX="129.0" layoutY="328.0" prefHeight="34.0" prefWidth="175.0" promptText="Szabadság">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </TextField>
+      <ChoiceBox fx:id="gend" layoutX="129.0" layoutY="270.0" prefHeight="26.0" prefWidth="175.0" />
+   </children>
+</AnchorPane>
